@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création de Room Sécurisée</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenue sur la Page de Création de Room Sécurisée</h1>
+
+        <!-- Zone d'inscription -->
+        <div id="signup">
+            <input type="text" id="pseudo" placeholder="Pseudo" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <button id="signupBtn">S'inscrire</button>
+        </div>
+
+        <!-- Zone de création de room -->
+        <div id="roomCreation" style="display:none;">
+            <h2>Créer une Room</h2>
+            <input type="text" id="roomName" placeholder="Nom de la Room" required>
+            <button id="createRoomBtn">Créer la Room</button>
+        </div>
+
+        <!-- Chat -->
+        <div id="chatRoom" style="display:none;">
+            <h3 id="roomTitle"></h3>
+            <div id="messages"></div>
+            <input type="text" id="messageInput" placeholder="Écrivez un message">
+            <button id="sendMessageBtn">Envoyer</button>
+
+            <!-- Envoi de fichiers -->
+            <input type="file" id="fileUpload" multiple>
+        </div>
+
+        <!-- IA -->
+        <div id="aiSection" style="display:none;">
+            <button id="generateAI">Générer Code IA</button>
+            <p id="aiResponse">🤖 IA: Hmm... je ne suis pas sûr de comprendre. Tu peux reformuler ?</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
